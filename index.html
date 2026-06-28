@@ -7,7 +7,7 @@
   <!-- ============================================================= -->
   <!--  EDIT ME: page title shown in the browser tab                  -->
   <!-- ============================================================= -->
-  <title>Amber Yang — Homepage</title>
+  <title>Yi (Amber) Yang</title>
 
   <link rel="stylesheet" href="assets/style.css" />
 </head>
@@ -25,33 +25,41 @@
 
     <!-- =========================================================== -->
     <!--  HEADER: photo + name + short bio                            -->
-    <!--  Replace assets/profile.jpg with your own photo.             -->
+    <!--  Replace assets/profile.svg with your own profile.jpg.       -->
     <!-- =========================================================== -->
     <header class="profile">
-      <!-- EDIT ME: replace assets/profile.svg with your own profile.jpg -->
       <img src="assets/profile.svg" alt="Profile photo" class="profile-photo" />
       <div class="profile-text">
-        <h1>Amber Yang <span class="name-alt">(杨)</span></h1>
+        <h1>Yi Yang <span class="name-alt">(Amber)</span></h1>
         <p class="tagline">
-          <!-- EDIT ME: one-line position / affiliation -->
-          PhD Student @ <a href="#">Your University</a>, Computer Science
+          Ph.D. Candidate @
+          <a href="https://www.utdallas.edu/">University of Texas at Dallas</a>,
+          Computer Science
         </p>
         <p class="bio">
-          <!-- EDIT ME: 2-4 sentences about yourself and your research interests -->
-          I am a researcher interested in
-          <strong>Machine Learning</strong>, <strong>LLM Reasoning</strong>,
-          and <strong>AI for Science</strong>. My work focuses on
-          [describe your research here]. Before that, I studied at
-          [previous institution].
+          I am a Ph.D. candidate in Computer Science at the University of Texas at
+          Dallas, advised by Prof.
+          <a href="https://personal.utdallas.edu/~daescu/">Ovidiu Daescu</a>.
+          My research centers on <strong>machine learning for scientific
+          discovery</strong> &mdash; building deep learning models for molecular
+          property prediction (graph neural networks and transformers) and
+          LLM-based multi-agent systems for scientific knowledge analysis.
+          I have an interdisciplinary background spanning AI and biomedical
+          research, with earlier work in glycobiology and immunology.
+        </p>
+        <p class="bio">
+          <strong>Research interests:</strong> Machine Learning for Science,
+          Molecular Representation Learning, Graph Neural Networks,
+          LLM Agents, and AI for Drug Discovery.
         </p>
 
-        <!-- Contact / social links. Delete any you don't use. -->
+        <!-- Contact / social links. -->
         <p class="links">
-          <a href="mailto:yiamber1006@gmail.com">Email</a> ·
-          <a href="https://scholar.google.com/">Google Scholar</a> ·
-          <a href="https://github.com/">GitHub</a> ·
-          <a href="https://www.linkedin.com/">LinkedIn</a> ·
-          <a href="assets/cv.pdf">CV</a>
+          <a href="mailto:yxy220016@utdallas.edu">Email</a> ·
+          <a href="https://scholar.google.com/citations?user=Oe5MJScAAAAJ&hl=en">Google Scholar</a> ·
+          <a href="https://github.com/AI4Science2025">GitHub</a> ·
+          <a href="https://www.linkedin.com/in/yi-yang-2023e">LinkedIn</a>
+          <!-- Add a CV link once you upload one: · <a href="assets/cv.pdf">CV</a> -->
         </p>
       </div>
     </header>
@@ -60,27 +68,17 @@
 
     <!-- =========================================================== -->
     <!--  EDUCATION                                                   -->
-    <!--  Copy a <div class="entry"> block to add another row.        -->
     <!-- =========================================================== -->
     <section>
       <h2>Education</h2>
 
       <div class="entry">
-        <img src="assets/logo-school1.png" alt="" class="entry-logo" />
         <div class="entry-body">
-          <div class="entry-title">Your University</div>
-          <div class="entry-sub">Ph.D. in Computer Science</div>
+          <div class="entry-title">University of Texas at Dallas</div>
+          <div class="entry-sub">Ph.D. in Computer Science · GPA 3.8</div>
+          <div class="entry-sub">Erik Jonsson Graduate Scholarship in Computer Science (2023)</div>
         </div>
-        <div class="entry-date">2024 – Present</div>
-      </div>
-
-      <div class="entry">
-        <img src="assets/logo-school2.png" alt="" class="entry-logo" />
-        <div class="entry-body">
-          <div class="entry-title">Previous University</div>
-          <div class="entry-sub">B.S. in Computer Science</div>
-        </div>
-        <div class="entry-date">2020 – 2024</div>
+        <div class="entry-date">2023 – 2028 (Expected)</div>
       </div>
     </section>
 
@@ -93,21 +91,58 @@
       <h2>Experience</h2>
 
       <div class="entry">
-        <img src="assets/logo-company1.png" alt="" class="entry-logo" />
         <div class="entry-body">
-          <div class="entry-title">Company / Lab Name</div>
-          <div class="entry-sub">Research Intern · Location</div>
+          <div class="entry-title">University of Texas at Dallas</div>
+          <div class="entry-sub">Graduate Research Assistant · Dallas, TX</div>
         </div>
-        <div class="entry-date">Summer 2025</div>
+        <div class="entry-date">Aug 2024 – Present</div>
       </div>
 
       <div class="entry">
-        <img src="assets/logo-company2.png" alt="" class="entry-logo" />
         <div class="entry-body">
-          <div class="entry-title">Another Company</div>
-          <div class="entry-sub">Software Engineer Intern · Location</div>
+          <div class="entry-title">StemiRNA Therapeutics</div>
+          <div class="entry-sub">Team Lead, Cancer Immunology / mRNA Vaccine Development · Shanghai, China</div>
         </div>
-        <div class="entry-date">Summer 2024</div>
+        <div class="entry-date">Apr 2021 – Nov 2022</div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- =========================================================== -->
+    <!--  RESEARCH PROJECTS                                           -->
+    <!-- =========================================================== -->
+    <section>
+      <h2>Research</h2>
+
+      <div class="pub">
+        <div class="pub-title">BiScale-GTR: Multi-Scale Transformer–Graph Neural Network for Molecular Representation</div>
+        <div class="pub-venue">Under review at TMLR · Oct 2024 – present</div>
+        <div class="pub-authors">
+          A parallel Transformer–GNN hybrid that models both long-range and local
+          molecular interactions, with a graph-based tokenizer for reusable
+          molecular substructures. Achieves state-of-the-art results on three
+          molecular property prediction benchmarks.
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-title">Interpretable Machine Learning for Molecular Property Prediction</div>
+        <div class="pub-venue">Published · Sep 2024 – Aug 2025</div>
+        <div class="pub-authors">
+          An end-to-end ML pipeline covering dataset curation, feature engineering,
+          and explainable XGBoost modeling — reducing 2,000+ molecular descriptors
+          to 10 key predictors with SHAP-based interpretability.
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-title">Literature-Grounded Limitation Detection via Cross-Paper Reasoning</div>
+        <div class="pub-venue">Ongoing · Mar 2026 – present</div>
+        <div class="pub-authors">
+          An LLM-based multi-agent system for molecular modification and
+          optimization grounded in the scientific literature.
+        </div>
       </div>
     </section>
 
@@ -120,9 +155,10 @@
     <section>
       <h2>News</h2>
       <ul class="news">
-        <li><span class="news-date">2026.06</span> One paper accepted to [Venue]! 🎉</li>
-        <li><span class="news-date">2026.01</span> Started my internship at [Company].</li>
-        <li><span class="news-date">2025.09</span> Released [project name] — check it out!</li>
+        <li><span class="news-date">2026.02</span> Released <em>BiScale-GTR</em> on arXiv; under review at TMLR. 🎉</li>
+        <li><span class="news-date">2025</span> Paper on interpretable ML for organic photovoltaics published in <em>IEEE Journal of Photovoltaics</em>.</li>
+        <li><span class="news-date">2024.08</span> Joined UT Dallas as a Graduate Research Assistant.</li>
+        <li><span class="news-date">2023</span> Awarded the Erik Jonsson Graduate Scholarship in Computer Science.</li>
       </ul>
     </section>
 
@@ -136,27 +172,24 @@
       <h2>Selected Publications</h2>
 
       <div class="pub">
-        <div class="pub-title">Paper Title Goes Here: A Descriptive Subtitle</div>
+        <div class="pub-title">BiScale-GTR: Fragment-Aware Graph Transformers for Multi-Scale Molecular Representation Learning</div>
         <div class="pub-authors">
-          <strong>Amber Yang</strong>, Co-Author One, Co-Author Two
+          <strong>Yi Yang</strong>, Ovidiu Daescu
         </div>
-        <div class="pub-venue">Conference / Journal Name, 2026</div>
+        <div class="pub-venue">Under review at TMLR · arXiv preprint, 2026</div>
         <div class="pub-links">
-          <a href="#">Paper</a> ·
-          <a href="#">Code</a> ·
-          <a href="#">Project Page</a>
+          <a href="https://arxiv.org/abs/2604.06336">arXiv</a>
         </div>
       </div>
 
       <div class="pub">
-        <div class="pub-title">Another Great Paper Title</div>
+        <div class="pub-title">Uncovering Structure–Performance Relationships in Organic Photovoltaics: Interpretable ML Model for Predicting the Power Conversion Efficiency</div>
         <div class="pub-authors">
-          Co-Author One, <strong>Amber Yang</strong>, Co-Author Two
+          <strong>Yi Yang</strong>, Arowa Yasmeen, Ovidiu Daescu
         </div>
-        <div class="pub-venue">arXiv preprint, 2025</div>
+        <div class="pub-venue">IEEE Journal of Photovoltaics, 2025</div>
         <div class="pub-links">
-          <a href="#">Paper</a> ·
-          <a href="#">Code</a>
+          <a href="https://scholar.google.com/citations?user=Oe5MJScAAAAJ&hl=en">Google Scholar</a>
         </div>
       </div>
 
@@ -166,7 +199,7 @@
     </section>
 
     <footer>
-      <p>© 2026 Amber Yang · Built with plain HTML/CSS · Hosted on GitHub Pages</p>
+      <p>© 2026 Yi (Amber) Yang · Built with plain HTML/CSS · Hosted on GitHub Pages</p>
     </footer>
 
   </main>
