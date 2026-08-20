@@ -153,3 +153,31 @@ footer {
   .profile-text { text-align: left; }
   .entry-date { font-size: 0.82rem; }
 }
+
+/* =================================================================
+   EVENTS (aiXBio Club)
+   ================================================================= */
+.event {
+  display: flex;
+  gap: 1.2rem;
+  align-items: flex-start;
+  margin-bottom: 1.8rem;
+}
+.event-date {
+  width: 84px;
+  flex-shrink: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-variant-numeric: tabular-nums;
+  padding-top: 0.15rem;
+}
+.event-body { flex: 1; }
+.event-title { font-weight: 600; }
+.event-meta { color: var(--muted); font-size: 0.92rem; font-style: italic; }
+.event-desc { font-size: 0.95rem; margin-top: 0.2rem; }
+.event-links { font-size: 0.9rem; margin-top: 0.2rem; }
+
+@media (max-width: 600px) {
+  .event { flex-direction: column; gap: 0.3rem; }
+  .event-date { width: auto; padding-top: 0; }
+}
