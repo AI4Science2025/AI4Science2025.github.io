@@ -40,17 +40,19 @@
         <p class="bio">
           I am a Ph.D. candidate in Computer Science at the University of Texas at
           Dallas.
-          My research centers on <strong>machine learning for scientific
-          discovery</strong> &mdash; building deep learning models for molecular
-          property prediction (graph neural networks and transformers) and
-          LLM-based multi-agent systems for scientific knowledge analysis.
+          My research develops <strong>molecular representation learning</strong>
+          and <strong>discrete 3D generative models</strong> &mdash; graph
+          Transformers, fragment tokenization, and SE(3)-aware geometry for
+          structure-based molecule design. My work on multi-scale molecular
+          representations is published in TMLR.
           I have an interdisciplinary background spanning AI and biomedical
-          research, with earlier work in glycobiology and immunology.
+          research, with earlier work in glycobiology, immunology and
+          pharmaceutical R&amp;D.
         </p>
         <p class="bio">
-          <strong>Research interests:</strong> Machine Learning for Science,
-          Molecular Representation Learning, Graph Neural Networks,
-          LLM Agents, and AI for Drug Discovery.
+          <strong>Research interests:</strong> Molecular Representation Learning,
+          3D Generative Models for Molecules, Graph Neural Networks and
+          Transformers, Fragment Tokenization, and AI for Drug Discovery.
         </p>
 
         <!-- Contact / social links. -->
@@ -58,7 +60,7 @@
           <a href="mailto:yxy220016@utdallas.edu">Email</a> ·
           <a href="https://scholar.google.com/citations?user=Oe5MJScAAAAJ&hl=en">Google Scholar</a> ·
           <a href="https://github.com/AI4Science2025">GitHub</a> ·
-          <a href="https://www.linkedin.com/in/yi-yang-2023e">LinkedIn</a> ·
+          <a href="https://www.linkedin.com/in/amberyangyi">LinkedIn</a> ·
           <a href="assets/cv.pdf">CV (PDF)</a>
         </p>
       </div>
@@ -79,6 +81,14 @@
           <div class="entry-sub">Erik Jonsson Graduate Scholarship in Computer Science (2023)</div>
         </div>
         <div class="entry-date">2023 – 2028 (Expected)</div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-body">
+          <div class="entry-title">Ocean University of China</div>
+          <div class="entry-sub">M.Eng. in Pharmaceutical Engineering · Qingdao, China</div>
+        </div>
+        <div class="entry-date">2015 – 2018</div>
       </div>
 
       <div class="entry">
@@ -124,13 +134,33 @@
       <h2>Research</h2>
 
       <div class="pub">
-        <div class="pub-title">BiScale-GTR: Multi-Scale Transformer–Graph Neural Network for Molecular Representation</div>
-        <div class="pub-venue">Accepted at TMLR · Oct 2024 – present</div>
+        <div class="pub-title">PoseWords: Mobility-Aware 3D Molecular Tokenization and Generation</div>
+        <div class="pub-venue">Ongoing · Jul 2026 – present</div>
         <div class="pub-authors">
-          A parallel Transformer–GNN hybrid that models both long-range and local
-          molecular interactions, with a graph-based tokenizer for reusable
-          molecular substructures. Achieves state-of-the-art results on three
-          molecular property prediction benchmarks.
+          Investigating molecular topology and geometry representations for
+          peptide-conditioned ligand generation — how discrete encodings capture
+          2D connectivity and 3D conformations together. Built a mobility-aware
+          tokenizer with fragment conformer quantization, achieving 653% greater
+          fragment reuse, 41% fewer single-atom tokens and 14% shorter sequences
+          than a rule-based baseline. Developing an SE(3)-aware generative
+          framework with torsion-based geometry and chemically constrained
+          fragment assembly, with controlled evaluation and geometric error
+          analysis guiding representation redesign.
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-title">BiScale-GTR: Fragment-Aware Graph Transformers for Multi-Scale Molecular Representation</div>
+        <div class="pub-venue">Accepted at TMLR · Oct 2025 – Jul 2026</div>
+        <div class="pub-authors">
+          A self-supervised, fragment-aware graph Transformer combining GINE atom
+          encoders, attention pooling, gated atom–fragment fusion and a
+          structure-aware Transformer for multi-scale molecular representation
+          learning. A deterministic RDKit graph-BPE pipeline with WL hashing,
+          chemical-validity filtering and recursive OOV decomposition improves
+          Peptides-func AP from 0.632 to 0.672 and Peptides-struct MAE from
+          0.293 to 0.262, using 78.5% less pretraining data than 2M-molecule
+          baselines.
         </div>
         <div class="pub-links">
           <a href="assets/poster.pdf">📄 Poster (PDF)</a>
@@ -138,23 +168,15 @@
       </div>
 
       <div class="pub">
-        <div class="pub-title">Interpretable Machine Learning for Molecular Property Prediction</div>
+        <div class="pub-title">Interpretable ML for Organic Photovoltaic Property Prediction</div>
         <div class="pub-venue">Published · Sep 2024 – Aug 2025</div>
         <div class="pub-authors">
-          An end-to-end ML pipeline covering dataset curation, feature engineering,
-          and explainable XGBoost modeling — reducing 2,000+ molecular descriptors
-          to 10 key predictors with SHAP-based interpretability.
-        </div>
-      </div>
-
-      <div class="pub">
-        <div class="pub-title">Chemically-Constrained Molecular Subword Vocabulary Induction for Chemistry Foundation Models</div>
-        <div class="pub-venue">Ongoing · 2026 – present</div>
-        <div class="pub-authors">
-          A general-purpose chemistry tokenizer that learns reusable, chemically
-          valid subword fragments — rewarding reusability and coverage over raw
-          frequency — to build transferable vocabularies for chemistry foundation
-          models.
+          An end-to-end explainable XGBoost pipeline over 350 donors and six
+          acceptors: curating molecular data, computing 2,000+ descriptors and
+          predicting photovoltaic performance at test R² = 0.918. Feature
+          selection, SHAP-based attribution and external-dataset validation
+          identified 10 interpretable predictors and quantified model
+          transferability beyond the training distribution.
         </div>
       </div>
     </section>
@@ -169,8 +191,8 @@
       <h2>Projects</h2>
 
       <div class="pub">
-        <div class="pub-title">HELP-E: Structured Memory for Multi-Concern Emotional Support Chatbots</div>
-        <div class="pub-venue">Course Project · with Maitry Bhavsar and Xinpeng Li · 2026</div>
+        <div class="pub-title">HELP-E: Long-Horizon LLM Context &amp; Memory System</div>
+        <div class="pub-venue">with Maitry Bhavsar and Xinpeng Li · Mar 2026 – Oct 2026</div>
         <div class="pub-authors">
           Built an emotional-support dialogue system that tracks multiple
           interrelated user concerns across sessions using a theory-grounded
@@ -181,7 +203,15 @@
           spanning a history-only baseline to a full typed-graph tracker. The
           structured graph memory raised active-concern detection to 0.668 F1
           (+38.3% over a summary-only baseline) while preserving high support
-          quality (MITI 4.57 / ESC 4.90).
+          quality (MITI 4.57 / ESC 4.90). Built as a containerized, FastAPI-based
+          multi-agent system over OpenAI-compatible vLLM serving, with
+          model-aware context management (token-budgeted assembly, evidence
+          prioritization, exact/semantic deduplication, provenance-preserving
+          compression) and MiniLM/MMR retrieval. Instrumented for observability —
+          stage latency, inference throughput, process/GPU memory, context-token
+          consumption and retries — with reproducible JSON audit traces.
+          Benchmarking across 2K–16K context budgets over 2,100 turns and 15
+          profiles improved assigned-primary detection from 60% to 73%.
         </div>
         <div class="pub-links">
           <a href="https://github.com/MaitryBhavsar/Help-E-ClassProject2026NLP">GitHub</a>
@@ -189,17 +219,43 @@
       </div>
 
       <div class="pub">
-        <div class="pub-title">SQL Injection Detection with DistilBERT</div>
-        <div class="pub-venue">Team Lead, BioTech Club at UTD · Dallas, TX · Jul 2024 – Jul 2025</div>
+        <div class="pub-title">NLP for Web Security: HTTP Attack Detection with DistilBERT</div>
+        <div class="pub-venue">Dallas, TX · May 2025 – Jul 2025</div>
         <div class="pub-authors">
-          Treated SQL injection detection as an NLP classification problem and
-          carried it through a full production lifecycle. Built an end-to-end
-          pipeline over 100,000+ curated SQL queries with reproducible
-          preprocessing and data splits, fine-tuning DistilBERT to 0.91 F1 — a
-          10% gain over classical ML baselines. Established an MLflow lifecycle
-          with experiment tracking, registry-based promotion, reproducible
-          packaging and rollback, delivering CPU inference at 28 ms p50 /
-          46 ms p95 at batch size 1.
+          Treated web-attack detection as an NLP classification problem. Used SQL
+          to retrieve and filter HTTP request logs, then engineered 12
+          security-focused features and character n-gram TF-IDF representations
+          from 18,211 requests for a four-class attack classification.
+          Benchmarked logistic regression, SVM, random forest and DistilBERT,
+          achieving 0.84 macro F1 with DistilBERT against 0.815 with a linear
+          SVM.
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- =========================================================== -->
+    <!--  TECHNICAL SKILLS                                            -->
+    <!-- =========================================================== -->
+    <section>
+      <h2>Technical Skills</h2>
+      <div class="entry">
+        <div class="entry-body">
+          <div class="entry-title">Scientific ML</div>
+          <div class="entry-sub">PyTorch, PyTorch Geometric, RDKit, SE(3)-aware modeling, GNNs, Graph Transformers, VQ-VAE, XGBoost, SHAP</div>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="entry-body">
+          <div class="entry-title">LLM Systems</div>
+          <div class="entry-sub">Context engineering, RAG, typed graph memory, multi-agent orchestration, MiniLM/MMR, context compression, vLLM, FastAPI, Docker, Pydantic/JSON Schema, LLM observability and evaluation</div>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="entry-body">
+          <div class="entry-title">Programming &amp; ML Engineering</div>
+          <div class="entry-sub">Python, SQL, MLflow, Slurm/HPC, Git, scikit-learn, pandas, NumPy</div>
         </div>
       </div>
     </section>
@@ -213,8 +269,9 @@
     <section>
       <h2>News</h2>
       <ul class="news">
-        <li><span class="news-date">2026.08</span> <em>BiScale-GTR: Multi-Scale Transformer&ndash;Graph Neural Network for Molecular Representation</em> accepted at TMLR, as is! 🎉</li>
+        <li><span class="news-date">2026.08</span> <em>BiScale-GTR: Fragment-Aware Graph Transformers for Multi-Scale Molecular Representation</em> accepted at TMLR, as is! 🎉</li>
         <li><span class="news-date">2026.08</span> Joined <em>OmiX Hub (Bioinfo group)</em> as a co-host — see the <a href="aixbio.html">aiXBio Club</a> page.</li>
+        <li><span class="news-date">2026.07</span> Started <em>PoseWords</em> — mobility-aware 3D molecular tokenization and generation.</li>
         <li><span class="news-date">2026.02</span> Released <em>BiScale-GTR</em> on arXiv; under review at TMLR. 🎉</li>
         <li><span class="news-date">2025</span> Paper on interpretable ML for organic photovoltaics published in <em>IEEE Journal of Photovoltaics</em>.</li>
         <li><span class="news-date">2024.08</span> Joined UT Dallas as a Graduate Research Assistant.</li>
