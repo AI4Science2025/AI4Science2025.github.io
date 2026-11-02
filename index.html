@@ -193,26 +193,39 @@
       <div class="pub">
         <div class="pub-title">HELP-E: Long-Horizon LLM Context &amp; Memory System</div>
         <div class="pub-venue">with Maitry Bhavsar and Xinpeng Li · Mar 2026 – Oct 2026</div>
-        <div class="pub-authors">
-          Built an emotional-support dialogue system that tracks multiple
-          interrelated user concerns across sessions using a theory-grounded
-          graph memory — Health Belief Model attributes, Transtheoretical Model
-          stages, and Motivational Interviewing strategies — over a
-          Llama-3.3-70B backbone. Designed a profile-driven multi-session user
-          simulator (30 profiles × 4 sessions × 10 turns) and an ablation suite
-          spanning a history-only baseline to a full typed-graph tracker. The
-          structured graph memory raised active-concern detection to 0.668 F1
-          (+38.3% over a summary-only baseline) while preserving high support
-          quality (MITI 4.57 / ESC 4.90). Built as a containerized, FastAPI-based
-          multi-agent system over OpenAI-compatible vLLM serving, with
-          model-aware context management (token-budgeted assembly, evidence
-          prioritization, exact/semantic deduplication, provenance-preserving
-          compression) and MiniLM/MMR retrieval. Instrumented for observability —
-          stage latency, inference throughput, process/GPU memory, context-token
-          consumption and retries — with reproducible JSON audit traces.
-          Benchmarking across 2K–16K context budgets over 2,100 turns and 15
-          profiles improved assigned-primary detection from 60% to 73%.
-        </div>
+        <ul class="pub-bullets">
+          <li>
+            Built an emotional-support dialogue system that tracks multiple
+            interrelated user concerns across sessions using a theory-grounded
+            graph memory — Health Belief Model attributes, Transtheoretical
+            Model stages, and Motivational Interviewing strategies — over a
+            Llama-3.3-70B backbone.
+          </li>
+          <li>
+            Designed a profile-driven multi-session user simulator (30 profiles
+            × 4 sessions × 10 turns) and an ablation suite spanning a
+            history-only baseline to a full typed-graph tracker.
+          </li>
+          <li>
+            The structured graph memory raised active-concern detection to
+            0.668 F1 (+38.3% over a summary-only baseline) while preserving
+            high support quality (MITI 4.57 / ESC 4.90).
+          </li>
+          <li>
+            Built as a containerized, FastAPI-based multi-agent system over
+            OpenAI-compatible vLLM serving, with model-aware context management
+            (token-budgeted assembly, evidence prioritization, exact/semantic
+            deduplication, provenance-preserving compression) and MiniLM/MMR
+            retrieval.
+          </li>
+          <li>
+            Instrumented for observability — stage latency, inference
+            throughput, process/GPU memory, context-token consumption and
+            retries — with reproducible JSON audit traces. Benchmarking across
+            2K–16K context budgets over 2,100 turns and 15 profiles improved
+            assigned-primary detection from 60% to 73%.
+          </li>
+        </ul>
         <div class="pub-links">
           <a href="https://github.com/MaitryBhavsar/Help-E-ClassProject2026NLP">GitHub</a>
         </div>

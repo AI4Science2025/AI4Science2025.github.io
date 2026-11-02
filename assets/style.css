@@ -132,6 +132,12 @@ h2 {
 .pub-title { font-weight: 600; }
 .pub-authors { font-size: 0.95rem; }
 .pub-venue { color: var(--muted); font-size: 0.92rem; font-style: italic; }
+.pub-bullets {
+  font-size: 0.95rem;
+  margin: 0.2rem 0 0;
+  padding-left: 1.15rem;
+}
+.pub-bullets li { margin-bottom: 0.35rem; }
 .pub-links { font-size: 0.9rem; margin-top: 0.2rem; }
 
 /* =================================================================
